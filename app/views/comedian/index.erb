@@ -1,1 +1,4 @@
-<h1>Hello</h1>
+
+<% @comedians.each do |comedian| %>
+  <h1> Comedian: <%= comedian.name %> | Age: <%= comedian.age %> </h1>
+<% end %>
