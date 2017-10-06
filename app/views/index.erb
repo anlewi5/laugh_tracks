@@ -1,12 +1,8 @@
 
 <% @comedians.each do |comedian| %>
   <h1> Comedian: <%= comedian.name %> | Age: <%= comedian.age %> </h1>
-<% end %>
-
-<h2>Specials</h2>
-
-<% @specials.each do |special| %>
-  <ul>
-    <li><%= special.name %></li>
-  </ul>
+  <h2> Specials: </h2>
+  <% comedian.specials.each do |special| %>
+    <p> <%= special %> </p>
+  <% end %>
 <% end %>
